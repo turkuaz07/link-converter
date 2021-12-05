@@ -1,23 +1,33 @@
 package com.trendyol.lc.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.elasticsearch.core.SearchHit;
 import org.springframework.stereotype.Service;
 
+import com.trendyol.lc.common.DeeplinkParser;
 import com.trendyol.lc.common.LinkConversionConstants;
 import com.trendyol.lc.common.WebUrlParser;
 import com.trendyol.lc.data.document.LinkConversionTable;
 import com.trendyol.lc.data.repo.LinkConversionTableRepository;
+import com.trendyol.lc.data.service.LinkConversionTableSearchService;
 import com.trendyol.lc.generator.deeplink.DeeplinkFactory;
 import com.trendyol.lc.generator.deeplink.DeeplinkGenerator;
+import com.trendyol.lc.generator.weburl.WebUrlFactory;
+import com.trendyol.lc.generator.weburl.WebUrlGenerator;
 import com.trendyol.lc.model.ConversionResult;
+import com.trendyol.lc.model.DeeplinkDetails;
 import com.trendyol.lc.model.ProductDetails;
 import com.trendyol.lc.model.WebUrlDetails;
+import com.trendyol.lc.type.DeeplinkType;
 
 @Service
 public class LinkConversionService {
 
 	@Autowired
 	private LinkConversionTableRepository linkConversionTableRepository;
+
+	@Autowired
+	private LinkConversionTableSearchService linkConversionTableSearchService;
 
 	public ConversionResult convertToDeeplink(String webUrl) {
 
@@ -29,6 +39,21 @@ public class LinkConversionService {
 		linkConversionTableRepository.save(populateLinkConversionTable(webUrl, deeplink, webUrlDetails));
 
 		return new ConversionResult(deeplink);
+	}
+
+	public ConversionResult convertToWebUrl(String deeplink) {
+
+		DeeplinkDetails deeplinkDetails = getDeeplinkDetails(deeplink);
+
+		if (deeplinkDetails.getDeeplinkType() == DeeplinkType.PRODUCT_DETAIL_PAGE_LINK) {
+			SearchHit<LinkConversionTable> searchHit = linkConversionTableSearchService.search(deeplinkDetails);
+			deeplinkDetails.setWebUrlConversionTable(searchHit != null ? searchHit.getContent() : null);
+		}
+
+		WebUrlGenerator webUrlGenerator = WebUrlFactory.getDeeplinkGenerator(deeplinkDetails);
+		String webUrl = webUrlGenerator.generate();
+
+		return new ConversionResult(webUrl);
 	}
 
 	private LinkConversionTable populateLinkConversionTable(String webUrl, String deeplink, WebUrlDetails webUrlDetails) {
@@ -49,5 +74,9 @@ public class LinkConversionService {
 
 	private WebUrlDetails getWebUrlDetails(String webUrl) {
 		return WebUrlParser.parse(webUrl);
+	}
+
+	private DeeplinkDetails getDeeplinkDetails(String deeplink) {
+		return DeeplinkParser.parse(deeplink);
 	}
 }

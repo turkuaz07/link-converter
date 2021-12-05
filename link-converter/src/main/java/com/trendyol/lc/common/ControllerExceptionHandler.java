@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
+import com.trendyol.lc.exception.InvalidDeeplinkException;
 import com.trendyol.lc.exception.InvalidWebUrlException;
 import com.trendyol.lc.exception.NoAvailableWebUrlConversionException;
 
@@ -30,6 +31,12 @@ public class ControllerExceptionHandler {
 
 	@ExceptionHandler(value = { InvalidWebUrlException.class })
 	public ResponseEntity<Object> handleInvalidWebUrlException(InvalidWebUrlException ex) {
+		log.error(ERROR_LOG_PREFIX, ex.getMessage());
+		return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
+	}
+
+	@ExceptionHandler(value = { InvalidDeeplinkException.class })
+	public ResponseEntity<Object> handleInvalidDeeplinkException(InvalidDeeplinkException ex) {
 		log.error(ERROR_LOG_PREFIX, ex.getMessage());
 		return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
 	}
