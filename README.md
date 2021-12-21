@@ -12,7 +12,7 @@ This is a microservice that provides some conversions like web url to deeplink o
 ## Run the System
 
 ## > On Your Local IDE
-Simply open the Java class com.trendyol.lc.LinkConverterApplication and run the main method from your IDE
+Simply open the Java class com.test.lc.LinkConverterApplication and run the main method from your IDE
 
 But running like that assumes that you have a running elasticsearch instance available on http://localhost:9200.
 So if there is no running elasticsearch instance, get one ready
