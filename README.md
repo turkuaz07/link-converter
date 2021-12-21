@@ -23,7 +23,7 @@ So if there is no running elasticsearch instance, get one ready
 After locate to project folder run below command
 
 ```
-docker-compose -f developmnet.yml up -d
+docker-compose -f development.yml up -d
 ```
 
 After a successful compose you will find 2 running containers on docker
