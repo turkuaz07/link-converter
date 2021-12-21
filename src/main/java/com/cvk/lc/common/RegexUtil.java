@@ -1,4 +1,4 @@
-package com.trendyol.lc.common;
+package com.cvk.lc.common;
 
 import java.util.regex.Pattern;
 

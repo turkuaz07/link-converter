@@ -1,24 +1,24 @@
-package com.trendyol.lc.service;
+package com.cvk.lc.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.elasticsearch.core.SearchHit;
 import org.springframework.stereotype.Service;
 
-import com.trendyol.lc.common.DeeplinkParser;
-import com.trendyol.lc.common.LinkConversionConstants;
-import com.trendyol.lc.common.WebUrlParser;
-import com.trendyol.lc.data.document.LinkConversionTable;
-import com.trendyol.lc.data.repo.LinkConversionTableRepository;
-import com.trendyol.lc.data.service.LinkConversionTableSearchService;
-import com.trendyol.lc.generator.deeplink.DeeplinkFactory;
-import com.trendyol.lc.generator.deeplink.DeeplinkGenerator;
-import com.trendyol.lc.generator.weburl.WebUrlFactory;
-import com.trendyol.lc.generator.weburl.WebUrlGenerator;
-import com.trendyol.lc.model.ConversionResult;
-import com.trendyol.lc.model.DeeplinkDetails;
-import com.trendyol.lc.model.ProductDetails;
-import com.trendyol.lc.model.WebUrlDetails;
-import com.trendyol.lc.type.DeeplinkType;
+import com.cvk.lc.common.DeeplinkParser;
+import com.cvk.lc.common.LinkConversionConstants;
+import com.cvk.lc.common.WebUrlParser;
+import com.cvk.lc.data.document.LinkConversionTable;
+import com.cvk.lc.data.repo.LinkConversionTableRepository;
+import com.cvk.lc.data.service.LinkConversionTableSearchService;
+import com.cvk.lc.generator.deeplink.DeeplinkFactory;
+import com.cvk.lc.generator.deeplink.DeeplinkGenerator;
+import com.cvk.lc.generator.weburl.WebUrlFactory;
+import com.cvk.lc.generator.weburl.WebUrlGenerator;
+import com.cvk.lc.model.ConversionResult;
+import com.cvk.lc.model.DeeplinkDetails;
+import com.cvk.lc.model.ProductDetails;
+import com.cvk.lc.model.WebUrlDetails;
+import com.cvk.lc.type.DeeplinkType;
 
 @Service
 public class LinkConversionService {

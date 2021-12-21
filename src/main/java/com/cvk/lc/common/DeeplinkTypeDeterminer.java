@@ -1,6 +1,6 @@
-package com.trendyol.lc.common;
+package com.cvk.lc.common;
 
-import com.trendyol.lc.type.DeeplinkType;
+import com.cvk.lc.type.DeeplinkType;
 
 public class DeeplinkTypeDeterminer {
 	

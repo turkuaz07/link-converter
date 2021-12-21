@@ -1,7 +1,7 @@
-package com.trendyol.lc.generator.weburl;
+package com.cvk.lc.generator.weburl;
 
-import com.trendyol.lc.common.LinkConversionConstants;
-import com.trendyol.lc.model.DeeplinkDetails;
+import com.cvk.lc.common.LinkConversionConstants;
+import com.cvk.lc.model.DeeplinkDetails;
 
 public class OtherPageWebUrlGenerator extends AbstractWebUrlGenerator {
 	

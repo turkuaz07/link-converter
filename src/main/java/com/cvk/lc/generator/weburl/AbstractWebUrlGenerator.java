@@ -1,6 +1,6 @@
-package com.trendyol.lc.generator.weburl;
+package com.cvk.lc.generator.weburl;
 
-import com.trendyol.lc.model.DeeplinkDetails;
+import com.cvk.lc.model.DeeplinkDetails;
 
 public abstract class AbstractWebUrlGenerator implements WebUrlGenerator {
 	

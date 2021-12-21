@@ -1,4 +1,4 @@
-package com.trendyol.lc.web.rest;
+package com.cvk.lc.web.rest;
 
 import java.time.LocalDateTime;
 
@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.trendyol.lc.annotation.ValidDeeplink;
-import com.trendyol.lc.annotation.ValidWebUrl;
-import com.trendyol.lc.log.LinkConversionTxLogger;
-import com.trendyol.lc.model.ConversionResult;
-import com.trendyol.lc.service.LinkConversionService;
+import com.cvk.lc.annotation.ValidDeeplink;
+import com.cvk.lc.annotation.ValidWebUrl;
+import com.cvk.lc.log.LinkConversionTxLogger;
+import com.cvk.lc.model.ConversionResult;
+import com.cvk.lc.service.LinkConversionService;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

@@ -1,7 +1,7 @@
-package com.trendyol.lc.model;
+package com.cvk.lc.model;
 
-import com.trendyol.lc.data.document.LinkConversionTable;
-import com.trendyol.lc.type.DeeplinkType;
+import com.cvk.lc.data.document.LinkConversionTable;
+import com.cvk.lc.type.DeeplinkType;
 
 public class DeeplinkDetails {
 

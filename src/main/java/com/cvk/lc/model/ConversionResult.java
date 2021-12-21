@@ -1,6 +1,6 @@
-package com.trendyol.lc.model;
+package com.cvk.lc.model;
 
-import com.trendyol.lc.data.document.LinkConversionLog;
+import com.cvk.lc.data.document.LinkConversionLog;
 
 public class ConversionResult {
 

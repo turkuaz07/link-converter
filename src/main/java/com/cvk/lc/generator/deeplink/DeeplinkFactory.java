@@ -1,7 +1,7 @@
-package com.trendyol.lc.generator.deeplink;
+package com.cvk.lc.generator.deeplink;
 
-import com.trendyol.lc.model.WebUrlDetails;
-import com.trendyol.lc.type.WebUrlType;
+import com.cvk.lc.model.WebUrlDetails;
+import com.cvk.lc.type.WebUrlType;
 
 public class DeeplinkFactory {
 

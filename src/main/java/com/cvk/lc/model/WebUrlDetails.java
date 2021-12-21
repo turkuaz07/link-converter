@@ -1,8 +1,8 @@
-package com.trendyol.lc.model;
+package com.cvk.lc.model;
 
 import java.util.Map;
 
-import com.trendyol.lc.type.WebUrlType;
+import com.cvk.lc.type.WebUrlType;
 
 public class WebUrlDetails {
 

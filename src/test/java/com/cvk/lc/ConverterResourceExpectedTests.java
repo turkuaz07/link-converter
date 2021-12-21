@@ -1,4 +1,4 @@
-package com.trendyol.lc;
+package com.cvk.lc;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -11,10 +11,10 @@ import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilde
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-import com.trendyol.lc.log.LinkConversionTxLogger;
-import com.trendyol.lc.model.ConversionResult;
-import com.trendyol.lc.service.LinkConversionService;
-import com.trendyol.lc.web.rest.ConverterResource;
+import com.cvk.lc.log.LinkConversionTxLogger;
+import com.cvk.lc.model.ConversionResult;
+import com.cvk.lc.service.LinkConversionService;
+import com.cvk.lc.web.rest.ConverterResource;
 
 @WebMvcTest(ConverterResource.class)
 class ConverterResourceExpectedTests {
@@ -31,7 +31,7 @@ class ConverterResourceExpectedTests {
 	@Test
 	void convertProductDetailPageWebUrlToDeeplink_test1() throws Exception {
 
-		String request = "https://www.trendyol.com/defacto/erkek-bebek-regular-fit-bisiklet-yaka-yilbasi-temali-geyik-baskili-2-li-takim-p-194728985?boutiqueId=592457&merchantId=1188";
+		String request = "https://www.cvk.com/defacto/erkek-bebek-regular-fit-bisiklet-yaka-yilbasi-temali-geyik-baskili-2-li-takim-p-194728985?boutiqueId=592457&merchantId=1188";
 		String mockResponse = "ty://?Page=Product&ContentId=194728985&CampaignId=592457&MerchantId=1188";
 		String expectedResponse = "ty://?Page=Product&ContentId=194728985&CampaignId=592457&MerchantId=1188";
 

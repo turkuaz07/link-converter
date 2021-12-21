@@ -1,4 +1,4 @@
-package com.trendyol.lc.annotation;
+package com.cvk.lc.annotation;
 
 
 import java.lang.annotation.Documented;

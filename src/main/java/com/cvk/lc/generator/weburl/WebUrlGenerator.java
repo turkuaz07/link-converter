@@ -1,4 +1,4 @@
-package com.trendyol.lc.generator.weburl;
+package com.cvk.lc.generator.weburl;
 
 public interface WebUrlGenerator {
 

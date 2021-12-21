@@ -1,4 +1,4 @@
-package com.trendyol.lc.data.document;
+package com.cvk.lc.data.document;
 
 import java.time.LocalDateTime;
 import java.util.UUID;

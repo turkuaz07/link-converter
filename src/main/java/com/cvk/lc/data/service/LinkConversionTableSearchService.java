@@ -1,4 +1,4 @@
-package com.trendyol.lc.data.service;
+package com.cvk.lc.data.service;
 
 import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.Operator;
@@ -11,8 +11,8 @@ import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilde
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
-import com.trendyol.lc.data.document.LinkConversionTable;
-import com.trendyol.lc.model.DeeplinkDetails;
+import com.cvk.lc.data.document.LinkConversionTable;
+import com.cvk.lc.model.DeeplinkDetails;
 
 @Service
 public class LinkConversionTableSearchService {

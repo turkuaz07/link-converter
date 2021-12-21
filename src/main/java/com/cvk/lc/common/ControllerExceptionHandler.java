@@ -1,4 +1,4 @@
-package com.trendyol.lc.common;
+package com.cvk.lc.common;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,9 +7,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.trendyol.lc.exception.InvalidDeeplinkException;
-import com.trendyol.lc.exception.InvalidWebUrlException;
-import com.trendyol.lc.exception.NoAvailableWebUrlConversionException;
+import com.cvk.lc.exception.InvalidDeeplinkException;
+import com.cvk.lc.exception.InvalidWebUrlException;
+import com.cvk.lc.exception.NoAvailableWebUrlConversionException;
 
 @ControllerAdvice
 public class ControllerExceptionHandler {

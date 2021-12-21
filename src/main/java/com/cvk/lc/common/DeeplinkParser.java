@@ -1,10 +1,10 @@
-package com.trendyol.lc.common;
+package com.cvk.lc.common;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.trendyol.lc.model.DeeplinkDetails;
-import com.trendyol.lc.type.DeeplinkType;
+import com.cvk.lc.model.DeeplinkDetails;
+import com.cvk.lc.type.DeeplinkType;
 
 public class DeeplinkParser {
 	

@@ -1,4 +1,4 @@
-package com.trendyol.lc.exception;
+package com.cvk.lc.exception;
 
 import javax.validation.ConstraintDeclarationException;
 

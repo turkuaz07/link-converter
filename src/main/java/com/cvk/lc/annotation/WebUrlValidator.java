@@ -1,11 +1,11 @@
-package com.trendyol.lc.annotation;
+package com.cvk.lc.annotation;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-import com.trendyol.lc.common.LinkConversionConstants;
-import com.trendyol.lc.common.RegexUtil;
-import com.trendyol.lc.exception.InvalidWebUrlException;
+import com.cvk.lc.common.LinkConversionConstants;
+import com.cvk.lc.common.RegexUtil;
+import com.cvk.lc.exception.InvalidWebUrlException;
 
 public class WebUrlValidator implements ConstraintValidator<ValidWebUrl, String> {
 

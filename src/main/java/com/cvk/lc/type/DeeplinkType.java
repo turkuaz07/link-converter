@@ -1,4 +1,4 @@
-package com.trendyol.lc.type;
+package com.cvk.lc.type;
 
 public enum DeeplinkType {
 

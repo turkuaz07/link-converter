@@ -1,4 +1,4 @@
-package com.trendyol.lc.generator.deeplink;
+package com.cvk.lc.generator.deeplink;
 
 public interface DeeplinkGenerator {
 

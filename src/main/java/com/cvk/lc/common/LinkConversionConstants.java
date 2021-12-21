@@ -1,4 +1,4 @@
-package com.trendyol.lc.common;
+package com.cvk.lc.common;
 
 public class LinkConversionConstants {
 
@@ -14,7 +14,7 @@ public class LinkConversionConstants {
 	public static final String SEARCH_PAGE_DEEPLINK_INDICATOR = "Search&Query";
 	
 	public static final String DEEPLINK_PREFIX = "ty://?Page=";
-	public static final String WEB_URL_HOSTNAME = "https://www.trendyol.com";
+	public static final String WEB_URL_HOSTNAME = "https://www.cvk.com";
 	
 	public static final String WEB_URL_BOUTIQUE_ID_PARAM = "boutiqueId";
 	public static final String WEB_URL_MERCHANT_ID_PARAM = "merchantId";

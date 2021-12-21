@@ -1,9 +1,9 @@
-package com.trendyol.lc.data.document;
+package com.cvk.lc.data.document;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
-import com.trendyol.lc.model.ProductDetails;
+import com.cvk.lc.model.ProductDetails;
 
 @Document(indexName = "link_conversion_table")
 public class LinkConversionTable {

@@ -1,11 +1,11 @@
-package com.trendyol.lc.log;
+package com.cvk.lc.log;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
-import com.trendyol.lc.data.document.LinkConversionLog;
-import com.trendyol.lc.data.repo.LinkConversionLogRepository;
+import com.cvk.lc.data.document.LinkConversionLog;
+import com.cvk.lc.data.repo.LinkConversionLogRepository;
 
 @Service
 public class LinkConversionTxLogger {

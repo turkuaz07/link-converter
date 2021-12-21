@@ -1,4 +1,4 @@
-package com.trendyol.lc.model;
+package com.cvk.lc.model;
 
 public class ProductDetails {
 

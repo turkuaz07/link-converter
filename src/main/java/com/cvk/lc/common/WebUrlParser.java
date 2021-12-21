@@ -1,4 +1,4 @@
-package com.trendyol.lc.common;
+package com.cvk.lc.common;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -7,8 +7,8 @@ import java.util.Map;
 
 import org.springframework.util.ObjectUtils;
 
-import com.trendyol.lc.model.WebUrlDetails;
-import com.trendyol.lc.type.WebUrlType;
+import com.cvk.lc.model.WebUrlDetails;
+import com.cvk.lc.type.WebUrlType;
 
 public class WebUrlParser {
 

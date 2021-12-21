@@ -1,4 +1,4 @@
-package com.trendyol.lc;
+package com.cvk.lc;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -10,11 +10,11 @@ import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.data.elasticsearch.core.SearchHit;
 
-import com.trendyol.lc.data.document.LinkConversionTable;
-import com.trendyol.lc.data.service.LinkConversionTableSearchService;
-import com.trendyol.lc.exception.NoAvailableWebUrlConversionException;
-import com.trendyol.lc.model.DeeplinkDetails;
-import com.trendyol.lc.service.LinkConversionService;
+import com.cvk.lc.data.document.LinkConversionTable;
+import com.cvk.lc.data.service.LinkConversionTableSearchService;
+import com.cvk.lc.exception.NoAvailableWebUrlConversionException;
+import com.cvk.lc.model.DeeplinkDetails;
+import com.cvk.lc.service.LinkConversionService;
 
 @ExtendWith(MockitoExtension.class)
 class LinkConversionServiceUnexpectedTests {

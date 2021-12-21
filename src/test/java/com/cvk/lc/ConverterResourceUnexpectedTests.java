@@ -1,4 +1,4 @@
-package com.trendyol.lc;
+package com.cvk.lc;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -11,10 +11,10 @@ import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilde
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-import com.trendyol.lc.exception.NoAvailableWebUrlConversionException;
-import com.trendyol.lc.log.LinkConversionTxLogger;
-import com.trendyol.lc.service.LinkConversionService;
-import com.trendyol.lc.web.rest.ConverterResource;
+import com.cvk.lc.exception.NoAvailableWebUrlConversionException;
+import com.cvk.lc.log.LinkConversionTxLogger;
+import com.cvk.lc.service.LinkConversionService;
+import com.cvk.lc.web.rest.ConverterResource;
 
 @WebMvcTest(ConverterResource.class)
 class ConverterResourceUnexpectedTests {

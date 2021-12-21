@@ -1,7 +1,7 @@
-package com.trendyol.lc.generator.deeplink;
+package com.cvk.lc.generator.deeplink;
 
-import com.trendyol.lc.common.LinkConversionConstants;
-import com.trendyol.lc.model.WebUrlDetails;
+import com.cvk.lc.common.LinkConversionConstants;
+import com.cvk.lc.model.WebUrlDetails;
 
 public class OtherPageDeeplinkGenerator extends AbstractDeeplinkGenerator {
 	

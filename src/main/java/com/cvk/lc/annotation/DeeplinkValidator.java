@@ -1,10 +1,10 @@
-package com.trendyol.lc.annotation;
+package com.cvk.lc.annotation;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-import com.trendyol.lc.common.LinkConversionConstants;
-import com.trendyol.lc.exception.InvalidDeeplinkException;
+import com.cvk.lc.common.LinkConversionConstants;
+import com.cvk.lc.exception.InvalidDeeplinkException;
 
 public class DeeplinkValidator implements ConstraintValidator<ValidDeeplink, String> {
 	

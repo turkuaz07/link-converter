@@ -1,4 +1,4 @@
-package com.trendyol.lc.exception;
+package com.cvk.lc.exception;
 
 public class NoAvailableWebUrlConversionException extends RuntimeException {
 

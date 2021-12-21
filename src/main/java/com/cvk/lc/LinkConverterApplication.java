@@ -1,4 +1,4 @@
-package com.trendyol.lc;
+package com.cvk.lc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -19,6 +19,6 @@ public class LinkConverterApplication {
 	    return new OpenAPI()
 	      .info(new Info()
 	      .title("Link Converter API")
-	      .description("Trendyol Link Converter Backend App"));
+	      .description("CVK Link Converter Backend App"));
 	}
 }

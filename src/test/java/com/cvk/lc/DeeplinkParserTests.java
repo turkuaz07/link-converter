@@ -1,4 +1,4 @@
-package com.trendyol.lc;
+package com.cvk.lc;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import com.trendyol.lc.common.DeeplinkParser;
-import com.trendyol.lc.model.DeeplinkDetails;
-import com.trendyol.lc.type.DeeplinkType;
+import com.cvk.lc.common.DeeplinkParser;
+import com.cvk.lc.model.DeeplinkDetails;
+import com.cvk.lc.type.DeeplinkType;
 
 @ExtendWith(MockitoExtension.class)
 class DeeplinkParserTests {
